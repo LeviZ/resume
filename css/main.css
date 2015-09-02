@@ -2651,6 +2651,10 @@ hr.separate_port {
     display:none;
 }
 
+.single-portfolio-thumb {
+    border: solid 4px #fff;
+}
+
 
 /*
 ===============================================
@@ -3026,13 +3030,14 @@ hr.separate_port {
     color: #fff;
     font-size: 60px;
     line-height: 80px;
-    opacity: 0.8;
-    background: #4477aa;
-    border: solid 3px #336699;
-    border-radius: 4px;
+    /*opacity: 0.8;*/
+    background: #d0d0d0;
+    /*border: solid 3px #336699;*/
+    /*border-radius: 4px;*/
     box-shadow: 2px 2px 10px #333;
     text-shadow: 1px 1px 1px #666;
-    padding: 0 4px;
+    padding: 4px 4px;
+    margin-bottom: 20px;
 }
 .overlay_arrow {
     left: 50%;

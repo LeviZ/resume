@@ -312,8 +312,8 @@ jQuery(document).ready(function($) {
 
     function initializes() {
         var contentString = '<div id="gmaps">' +
-                '<img src="http://demo.flexy-codes.com/flexyblog/images/writers/staff-1.jpg" alt="" /><br />' +
-                '<p style="font-family: Arial, Helvetica, sans-serif;">44 E. 8th Street Suite 300 Holland.<br /><br />Phone: +61 3 8376 6284</p>' +
+                '<img src="images/me&jo-waterfall.jpg" alt="" /><br />' +
+                '<p style="font-family: Arial, Helvetica, sans-serif;">920 SW 3rd Ave, Portland, OR 97204<br /><br />Phone: 651 210 6929<br /><br />E-mail: <a href="mailto:levizortman@gmail.com">levizortman@gmail.com</a></p>' +
                 '</div>';
 
         var infowindow = new google.maps.InfoWindow({
@@ -323,14 +323,14 @@ jQuery(document).ready(function($) {
 
         var mapOptions = {
             zoom: 14,
-            center: new google.maps.LatLng(-37.815921, 144.964085),
+            center: new google.maps.LatLng(45.516441, -122.676147),
             mapTypeId: google.maps.MapTypeId.ROADMAP
         }
         var map = new google.maps.Map(document.getElementById("map_canvas"), mapOptions);
         var marker = new google.maps.Marker({
-            position: new google.maps.LatLng(-37.815921, 144.964085),
+            position: new google.maps.LatLng(45.516441, -122.676147),
             map: map,
-            title: '44 E. 8th Street Suite 300 Holland.',
+            title: '920 SW 3rd Ave, Portland, OR 97204',
             icon: 'images/map-marker.png'
         });
         google.maps.event.addListener(marker, 'click', function() {
@@ -351,7 +351,7 @@ jQuery(document).ready(function($) {
             $("#contentContact").animate({left: '-350px'}, 1500, 'easeOutCubic');
         }
     });
-	
+
 	$("#tabs_2").click(function() {
         if ($(this).hasClass('tab_close')) {
 
